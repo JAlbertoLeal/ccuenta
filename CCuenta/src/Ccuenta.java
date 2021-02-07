@@ -7,11 +7,11 @@ public class Ccuenta {
 	private double saldo;
 	private double tipoInteres;
 
-	public Ccuenta(String nom, String cue, double sal, double tipo) {
+	public Ccuenta(String nom, String cue, double sal, double tipoInteres) {
 		nombre = nom;
 		cuenta = cue;
 		saldo = sal;
-		tipoInteres = tipo;
+		this.tipoInteres = tipoInteres;
 	}
 
 	public double getSaldo() {
@@ -41,5 +41,9 @@ public class Ccuenta {
 	
 	public String getNombre() {
 		return nombre;
+	}
+	
+	public double getTipo() {
+		return tipoInteres;
 	}
 }
