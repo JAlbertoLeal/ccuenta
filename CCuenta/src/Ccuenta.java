@@ -38,4 +38,8 @@ public class Ccuenta {
 	public String getCuenta() {
 		return cuenta;
 	}
+	
+	public String getNombre() {
+		return nombre;
+	}
 }
