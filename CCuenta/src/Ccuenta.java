@@ -14,36 +14,39 @@ public class Ccuenta {
 		this.tipoInteres = tipoInteres;
 	}
 
-	public double getSaldo() {
-		return saldo;
-	}
-
 	// Para probar Junit
-	public void ingresar(double cantidad) {
-		if (cantidad < 0)
+	public double ingresar(double cantidad) {
+		if (cantidad < 0) {
 			System.out.println("Cantidad negativa");
-		saldo = saldo + cantidad;
+		}
+		return saldo = saldo + cantidad;
 	}
 
 	// Para probar JUnit
-	public void retirar(double cantidad) {
+	public double retirar(double cantidad) {
 		if (cantidad < 0)
 			System.out.println("Cantidad Negativa");
 		if (this.getSaldo() < cantidad)
 			System.out.println("Saldo insuficiente");
-		saldo = saldo - cantidad;
+		return saldo = saldo - cantidad;
 	}
 
-	// Método que me devuelve el número de cuenta
-	public String getCuenta() {
-		return cuenta;
-	}
+	// M�todos para devolver los datos de la cuenta
 	
 	public String getNombre() {
 		return nombre;
 	}
 	
+	public String getCuenta() {
+		return cuenta;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
 	public double getTipo() {
 		return tipoInteres;
 	}
+	
 }
